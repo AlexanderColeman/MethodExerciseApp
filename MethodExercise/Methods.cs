@@ -40,6 +40,22 @@ public class Methods
         return x/y;
     }
 
+    public void AddParam(params int[] arr)
+    {
+        Console.WriteLine("\n\n\nHere are the numbers in your Array that will be added together");
+        foreach(int i in arr)
+        {
+            Console.WriteLine(i);
+        }
+        int sum = 0;
+        for(int i =0; i< arr.Length; i++)
+        {
+            sum += arr[i];
+        }
+        Console.WriteLine($"The sum is {sum}");
+        
+    }
+
 
 
 }
